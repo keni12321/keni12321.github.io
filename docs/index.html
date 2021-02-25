@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>keni's Website</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <section>
+        <header>
+            <nav>
+                <h1>Like Every Tool You Need For School</h1>
+                    <ul>
+                        <li><a href="first-vid.html">ComputerLiteracy Assignment</a></li>
+                        <li><a href="interest.html">Simple Interest Calculator</a></li>
+                        <li><a href="texture.html">Texture Pack</a></li>
+                        <li><a href="./lyrics/lyrics.html">Lyrics</a></li>
+                        <li><a href="./archive/archive.html">Archive</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div id="BriefDescription">
+            This is just a Website for fun and thanks for coming here <br>
+            donations are appreciated tho
+        </div>
+        </section>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+    </body>
+
+    <div id="footer">
+        © 2020 keni's Website Skhbbss
+    </div>
+</html>
